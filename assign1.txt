@@ -1,0 +1,46 @@
+create database Library_Management_System;
+use Library_Management_System;
+
+create table Member (
+Member_ID int,
+First_Name varchar(20),
+Last_Name varchar(15),
+Email varchar(20),
+Phone varchar(10),
+Address varchar(20)
+);
+
+desc Member;
+
+create table Book (
+Book_ID int,
+Title varchar(25),
+Publisher_ID int,
+Year_Published int,
+Language varchar(10)
+);
+
+desc Book;
+
+create table Author (
+Author_ID int,
+First_Name varchar(20),
+Last_Name varchar(15)
+);
+
+desc Author;
+
+create table Book_Author (
+Book_ID int,
+Author_ID int
+);
+
+desc Book_Author;
+
+create table Publisher (
+Publisher_ID int,
+Publisher_Name varchar(25),
+Address varchar(20)
+);
+
+desc Publisher;
