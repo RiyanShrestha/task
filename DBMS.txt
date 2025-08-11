@@ -1,0 +1,44 @@
+Create database School;
+use School;
+Create table Student 
+( USN varchar(15),
+name varchar(15),
+age int,
+m1 int,
+m2 int);
+
+Create table Staff
+(Staff_ID varchar(15),
+name varchar(15),
+age int,
+salary int);
+
+Create table Facility
+(Facility_ID varchar(15),
+name varchar(15),
+age int);
+
+Create table Department
+(department_name varchar(20),
+name_of_school varchar(20),
+Department_number int);
+
+desc Student;
+desc Staff;
+Alter table Student 
+modify USN varchar(30);
+
+Alter table Student
+add m3 int;
+
+desc Facility;
+show databases;
+
+Alter table Student
+add (average numeric(5,2));
+
+Alter table Student 
+add (total int);
+
+Alter table Student
+drop m3;
